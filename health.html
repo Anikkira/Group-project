@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+        <a class="w3-bar-item w3-button" href="homepage.html">Home</a>
+        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+          <a href="commenthome.html" class="w3-bar-item w3-button">Overview</a>
+          <button class="w3-button w3-block w3-left-align" onclick="myAccFunc1()">
+            <a href="life.html" class="w3-bar-item w3-button">Life</a><i class="fa fa-caret-down"></i>
+          </button>
+          <div id="demoAcc1" class="w3-hide w3-white w3-card w3-theme-d1">
+            <a href="#section1" class="w3-bar-item w3-button">Information Access</a>
+            <a href="#section2" class="w3-bar-item w3-button">Social Entertainment</a>
+            <a href="#section3" class="w3-bar-item w3-button">Problems</a>
+          </div>
+          
+          <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+             <a href="education.html"class="w3-bar-item w3-button">Education</a><i class="fa fa-caret-down"></i>
+              </button>
+              <div id="demoAcc2" class="w3-hide w3-white w3-card w3-theme-d1">
+                <a href="#section4" class="w3-bar-item w3-button">Create New Learning Environment</a>
+                <a href="#section5" class="w3-bar-item w3-button"> Access Learning Resources</a>
+                <a href="#section6" class="w3-bar-item w3-button">Narrow the Educational Inequality</a>
+                <a href="#section7" class="w3-bar-item w3-button">Problems</a>
+      
+              </div>
+              <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+                <a href="health.html"class="w3-bar-item w3-button">Healthcare</a><i class="fa fa-caret-down"></i>
+                 </button>
+                 <div id="demoAcc3" class="w3-hide w3-white w3-card w3-theme-d1">
+                   <a href="#section8" class="w3-bar-item w3-button">Development Potential</a>
+                   <a href="#section9" class="w3-bar-item w3-button">Problems</a>
+                 
+                 </div>
+
+            <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+                <a href="creation.html"class="w3-bar-item w3-button">Creativity and Innovation</a><i class="fa fa-caret-down"></i>
+                </button>
+                <div id="demoAcc4" class="w3-hide w3-white w3-card w3-theme-d1">
+                <a href="#section10" class="w3-bar-item w3-button">Stimulate Creative Thoughts</a>
+                <a href="#section11" class="w3-bar-item w3-button">Doubts</a>
+                </div>
+                     
+
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">Healthcare</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">Healthcare</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+    <div id="section8">
+        <br>
+    <hr>
+    <h1><strong>Development Potential</strong></h1>
+    <h4> <strong>The utilization of Chatbots in the healthcare sector holds great potential for various applications.</strong><br>
+        They can make it easy for users to find information by instantaneously responding to questions and requests-through text input, audio input, or both-without the need for human intervention or manual research.
+        In this way, Chatbots can provide timely answers and related information on common knowledge problems such as weather forecasts, news updates, and travel guides, saving people time searching and browsing many web pages. </h4>
+        <br>
+        <iframe width="778.5" height="438" src="https://www.youtube.com/embed/nEahhnk3VvM" title="AI in Medicine: Possible Applications and Potentials" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+  
+        <br>
+        <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee; width:fit-content">
+
+        <h4><strong>DocsGPT</strong>, a tool developed by Doximity, has introduced a beta version that integrates ChatGPT to aid in writing clinical content like insurance denial appeals. Furthermore, there have been explorations into leveraging ChatGPT to address medical inquiries, compose clinical case vignettes, and simplify radiology reports to improve communication between patients and healthcare providers.  </h4>
+        </div>
+        <div id="section9">
+    <br>
+    <hr>
+    <h1><strong>Problems</strong></h1>
+    <h3><strong>Problem 1.</strong></h3><h4><strong>These models may occasionally generate inaccurate information</strong>, emphasizing the necessity of proofreading and involving domain experts to review and modify the output for precision.</h4>
+    <br>
+    <h3><strong>Problem 2.</strong></h3><h4><strong>Privacy issues are an important aspect when using ChatGPT in health care settings.
+    </strong>The collection, storage, and processing of sensitive patient information give rise to significant privacy concerns that must be addressed to ensure the confidentiality and safeguarding of personal data. Unauthorized access and data breaches are a particular worry. 
+</h4>
+    <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee; width:fit-content">
+        <h4>As ChatGPT interacts with patients and healthcare providers, it may accumulate and retain personal health information, including medical histories, test results, diagnoses, and other sensitive data. Safeguarding this information is crucial to uphold patient privacy and adhere to relevant privacy regulations. </h4>
+    </div>
+    <h4>Another privacy consideration is <strong>the risk of reidentification</strong>. Even if the data collected by ChatGPT are deidentified, there remains a possibility for individuals to be reidentified by combining this data with other available sources. Effectively preventing reidentification requires robust anonymization techniques and stringent access controls to prevent unauthorized linking of data.
+    </h4>
+    <img src="medi.jpeg">
+        </div>
+    </div>
+    <br>
+    
+    <div id="section3">
+    <br>
+ 
+    
+    
+
+
+    
+</div>
+</div>
+</body>
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+javascript
+// Accordion
+
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+// 第一个下拉列表的函数
+function myAccFunc1() {
+  var x = document.getElementById("demoAcc1");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// 第二个下拉列表的函数
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// 第三个下拉列表的函数
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+// 第四个下拉列表的函数
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+

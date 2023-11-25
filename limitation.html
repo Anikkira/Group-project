@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+        <a class="w3-bar-item w3-button" href="homepage.html">Home</a>
+        <a class="w3-bar-item w3-button" href="discussion.html">Overview</a>
+        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+        <a class="w3-bar-item w3-button" href="mis.html">Common Misconceptions</a>
+        <a class="w3-bar-item w3-button w3-theme-light" href="limitation.html">Limitation</a>
+        <a class="w3-bar-item w3-button" href="future.html">Recommendations & Future</a>
+        </div>
+      </nav>
+
+      <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">Limitation</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">Limitation</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+  <hr>
+  <h2><strong>Limitation 1. <br>Lack of practical AI</strong></h2>
+  <div class="w3-container w3-sand w3-leftbar">
+
+  <h4>AI chatbots lack the ability to understand complex human emotions. They can only provide answers based on the data they have been trained on and cannot learn new information on their own. They may struggle with more complex issues that require human intervention.
+    AI chatbots are built to mimic human interactions, but they lack the practical intelligence to understand complex situations or provide personalized attention. They can handle simple and repetitive tasks, but when it comes to addressing complex issues, chatbots often fall short.
+     </h4>
+  </div>
+  <br>
+
+
+   <hr>
+   <h2><strong>Limitation 2. <br>Unawareness of Context
+   </strong></h2>
+   <div class="w3-container w3-sand w3-leftbar">
+ 
+   <h4>The chatbot models don't have human-level understanding. Although chatbot models have made significant strides in language processing and generation, they are still limited by their lack of true comprehension and contextual understanding.</h4>
+   </div>
+   <br>
+ 
+    <hr>
+    <h2><strong>Limitation 3. <br>Platform-Dependent Operation
+
+    </strong></h2>
+    <div class="w3-container w3-sand w3-leftbar">
+  
+    <h4>Chatbots are often designed to work on specific platforms, such as Facebook Messenger or Slack, which can limit their reach and effectiveness. The platform-dependent operation can limit the chatbots' ability to reach a wider audience and provide support to all users.
+    </h4>
+    </div>
+    <br>
+    
+
+ 
+  </div>
+  <br>
+  <br>
+  <img src="think.JPG">
+</div>
+</div>
+</body>
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 

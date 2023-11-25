@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+        <a class="w3-bar-item w3-button" href="homepage.html">Home</a>
+        <a class="w3-bar-item w3-button" href="discussion.html">Overview</a>
+        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+        <a class="w3-bar-item w3-button w3-theme-light" href="mis.html">Common Misconceptions</a>
+        <a class="w3-bar-item w3-button" href="limitation.html">Limitation</a>
+        <a class="w3-bar-item w3-button" href="future.html">Recommendations & Future</a>
+        </div>
+      </nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">Common Misconceptions</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">Common Misconceptions</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+  <hr>
+  <h2><strong>Misconception 1. <br>The AI chatbot would conquer the world one day</strong></h2>
+  <div class="w3-container w3-sand w3-leftbar">
+
+  <h4><strong>With the fast development of artificial intelligence from Eliza to ChatGPT, many people are afraid that one day AI will replace human beings and finally conquer the whole world.</strong></h4>
+  </div>
+  <br>
+
+  <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+
+   <h4>Actually, the AI chatbot helps automate answering customer questions and routine tasks to make staff work easier. Up to 75-80% of customer questions at any business usually are recurring and frequently asked at any time of the day. With its help, employees will be able to take on more complex tasks and have more opportunities for personal development, and focus on the development of the company they are working for. An AI chatbot will not steal their job but will replace them only in these tasks that prevent them from doing better.</h4>
+   </div>
+
+
+   <hr>
+   <h2><strong>Misconception 2. <br>AI chatbot is a Superhero... who can solve absolutely all problems!
+   </strong></h2>
+   <div class="w3-container w3-sand w3-leftbar">
+ 
+   <h4><strong>Some people may assume that chatbot models like ChatGPT are equally proficient across all domains and topics.</strong></h4>
+   </div>
+   <br>
+   
+   <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+ 
+    <h4>Actually, these models have limitations and may struggle with specific subject areas or technical domains where specialized knowledge is required. For some confidential information online, AI is not able to have access to them and cannot solve the problems related to that information.
+    </h4>
+    </div>
+
+    <hr>
+    <h2><strong>Misconception 3. <br>AI Chatbots are infallible
+
+    </strong></h2>
+    <div class="w3-container w3-sand w3-leftbar">
+  
+    <h4><strong>AI chatbots rely on huge databases called large language models and the databases
+        contain text from a vast range of sources, everything from literature to social media posts are included in them. 
+        </strong></h4>
+    </div>
+    <br>
+    
+    <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+  
+     <h4>Actually,these are all created and written by humans and it is possible that these references have some problems. This is the repository that the chatbots reference to supply their answers. Any factual errors present in these can manifest themselves in the answers they provide.
+
+     </h4>
+     </div>
+
+
+     <hr>
+     <h2><strong>Misconception 4. <br>Chatbots Will Replace Human Interaction
+
+ 
+     </strong></h2>
+
+     <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+   
+      <h4>The answer to this question can hark back to the section on sentience. Chatbots can mimic human responses and can certainly competently answer factual questions (mostly) and help in many ways. However, they cannot understand emotions, human experiences, and many of the nuances of conversation, so they are not capable of replicating the full range of human empathy, intuition, and problem-solving abilities.
+ 
+      <br>  Human interaction is a complex and multileveled process that involves such elements as empathy, critical thinking, emotional understanding, and intuition. None of these attributes are present in generative AI chatbots.
+         
+        
+ 
+      </h4>
+      </div>
+      <br>
+      <iframe width="1038" height="584" src="https://www.youtube.com/embed/AAwbvGywdOc" title="The Real Danger Of ChatGPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <br>
+  <br>
+
+</div>
+</div>
+</body>
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+
+
+

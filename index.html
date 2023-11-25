@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+
+
+</head>
+<body id="myPage">
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d5 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="homepage.html" class="w3-bar-item w3-button w3-theme-light"><i class="fa fa-home w3-margin-right"></i>Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">Introduction <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="index.html" class="w3-bar-item w3-button">Overview</a>
+          <a href="Eliza.html" class="w3-bar-item w3-button">Eliza</a>
+          <a href="PARRY.html" class="w3-bar-item w3-button">PARRY</a>
+          <a href="alice.html" class="w3-bar-item w3-button">A.L.I.C.E</a>
+          <a href="siri.html" class="w3-bar-item w3-button">Siri</a>
+          <a href="google.html" class="w3-bar-item w3-button">Google Assistant</a>
+          <a href="chatgpt.html" class="w3-bar-item w3-button">ChatGPT</a>
+   
+    </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">Comment and Impact <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="commenthome.html" class="w3-bar-item w3-button">Overview</a>
+          <a href="life.html" class="w3-bar-item w3-button">Life</a>
+          <a href="education.html" class="w3-bar-item w3-button">Education</a>
+          <a href="health.html" class="w3-bar-item w3-button">Healthcare</a>
+          <a href="creation.html" class="w3-bar-item w3-button">Creativity and Innovation</a>
+        </div>
+    </div>
+        <a href="discussion.html" class="w3-bar-item w3-button" ></i>Discussion</a>
+
+      </div>
+  </div>
+ </div>
+
+
+
+
+
+<!-- Team Container -->
+<br>
+<div class="w3-container w3-padding-64 w3-center w3-theme" id="title" >
+    <h1><strong>The Evolution of ChatBot from Eliza to ChatGPT</strong></h1>
+    <div class="image-container2">
+   
+        <img src="back3.jpg" alt="boat" style="width:100%;min-height:auto;max-height:600px; z-index: 1">
+      </div>
+
+<div class="w3-row"><br>
+<br>
+
+<div class="w3-third">
+  <img src="111.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><strong>Introduction</strong></h3>
+</div>
+
+<div class="w3-third">
+  <img src="222.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><strong>Comments and Impacts</strong></h3>
+</div>
+
+<div class="w3-third">
+  <img src="333.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3><strong>Discussion</strong></h3>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-footer" style="padding:32px;">
+</footer>
+     
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
